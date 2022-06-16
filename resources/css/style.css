@@ -2,17 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 /* Navigation Bar */
 .container {
-    margin-top: 10px;
+    height: 100vh;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 nav {
+    margin-top: 30vh;
     background:#FEFDE1;
     border-radius: 50px;
     padding: 10px;
@@ -26,7 +29,7 @@ nav ul li {
     margin: 10px;
     font-size: 18px;
     font-weight: 500;
-    color: black;
+    color: purple;
     cursor: pointer;
     position: relative;
     z-index: 2;
@@ -49,10 +52,62 @@ nav ul li::after {
 }
 
 nav ul li:hover {
-    color: rgb(217, 0, 241);
+    font-weight: bold;
 }
 
 nav ul li:hover::after {
     top: 50%;
     opacity: 1;
+}
+
+/* image */
+img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.image {
+    position: absolute;
+    margin-bottom: 30vh;
+}
+
+/* welcoming text */
+.welcome {
+    position: absolute;
+    margin-left: 50vh;
+    margin-bottom: 10vh;
+}
+
+h1 {
+    color: purple;
+}
+
+h2 {
+    color: #F3EE58;
+}
+
+/* footer */
+.footerbar{
+    margin: 120px 0px 20px 0px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-self: flex-end;
+}
+
+i{
+    padding: 10px 10px;
+}
+
+i:hover{
+    color: purple;
+    transition: 0.5s;
+}
+
+footer > a:visited, footer > a{
+    text-decoration: none;
+    color: black;
 }
